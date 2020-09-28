@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySetPinLock"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+    <TextView
+    android:id="@+id/tv_pin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Set Pin"
+    android:inputType="number"/>
+    <EditText
+        android:id="@+id/et_pin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLength="4"
+        />
+    <TextView
+        android:id="@+id/tv_Cpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comfirm Pin"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/et_comfirm_pin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLength="4"/>
+    <Button
+        android:id="@+id/btn_set_pin"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

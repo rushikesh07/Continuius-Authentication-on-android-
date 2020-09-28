@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C605F">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:background="@color/button_color">
+
+        <TextView
+            android:id="@+id/tv_appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start/Stop CAS"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/switch_lock"
+            android:layout_toStartOf="@+id/switch_lock"
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+        <Switch
+            android:id="@+id/switch_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:checked="true"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="Set Lock"
+        android:textColor="#FBF8F8"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_applist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
